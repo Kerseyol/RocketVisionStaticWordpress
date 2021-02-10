@@ -1780,6 +1780,22 @@ footer a:hover {
     height: 250px;
     width: 250px;
   }
+  form label {
+    font-size: 1rem;
+  }
+  .formSend-box {
+    margin-top: 2rem;
+  }
+  .formName,
+  .formPhone,
+  .formBudget,
+  .formEmail {
+    margin-bottom: 10px;
+  }
+  .in-touch-address {
+    text-align: center;
+    padding: 10px;
+  }
 }
 
 @media (max-width: 475px) {
@@ -1809,7 +1825,7 @@ footer a:hover {
   }
 }
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
   form label {
     font-size: 1rem;
   }
@@ -1826,7 +1842,7 @@ footer a:hover {
     text-align: center;
     padding: 10px;
   }
-}
+} */
 
 @media (max-width: 425px) {
   .blog-article {
