@@ -40,6 +40,7 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  width: 100vw;
 }
 a:focus {
   outline: thin dotted;
@@ -406,6 +407,7 @@ body a {
   background-image: url(rockets.png);
   background-repeat: no-repeat;
   background-size: 550px;
+  width: 100vw;
   background-position: 25% 0%;
   position: relative;
   min-height: calc(100vh - 12rem);
@@ -1093,13 +1095,14 @@ form input,
   color: #fbf8fa;
   border: 0;
   padding: 10px;
+  width: 100%;
 }
 
 .in-touch-form-container {
   display: flex;
   flex-direction: row;
-  width: 70vw;
-  justify-content: space-between;
+  width: 100vw;
+  justify-content: space-around;
   height: 350px;
 }
 
@@ -1123,10 +1126,12 @@ form input,
 .formSend {
   text-align: center;
   margin-top: 135px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid #ff009b;
   background-color: transparent;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 .formSend:hover {
@@ -1137,6 +1142,7 @@ form input,
 }
 
 #submit {
+  text-transform: uppercase;
   background-color: transparent;
 }
 
@@ -1224,15 +1230,16 @@ footer a:hover {
     margin-left: auto;
     margin-right: auto;
   }
-  .in-touch-form-container {
-    width: 90vw;
-  }
 }
 
 @media (max-width: 1380px) {
   .blog-wrapper {
     width: 100%;
     padding: 0.5rem;
+  }
+  .in-touch-form-left,
+  .in-touch-form-right {
+    width: 35%;
   }
 }
 
@@ -1317,10 +1324,7 @@ footer a:hover {
     margin-bottom: 1rem;
   }
   .in-touch-form-container {
-    width: 95vw;
-  }
-  form label {
-    font-size: 1.3rem;
+    width: 100vw;
   }
   .next-featured-member {
     width: 100%;
@@ -1414,12 +1418,6 @@ footer a:hover {
   }
 }
 
-@media (max-width: 850px) {
-  form label {
-    font-size: 1.2rem;
-  }
-}
-
 @media (max-width: 800px) {
   .loop-wrapper {
     grid-template-columns: 46% 46%;
@@ -1438,12 +1436,6 @@ footer a:hover {
     height: 150px;
     width: 150px;
     object-fit: cover;
-  }
-}
-
-@media (max-width: 775px) {
-  form label {
-    font-size: 1.1rem;
   }
 }
 
@@ -1514,9 +1506,6 @@ footer a:hover {
 }
 
 @media (max-width: 725px) {
-  form label {
-    font-size: 1rem;
-  }
   .googleMapDiv {
     width: 90%;
   }
@@ -1543,6 +1532,10 @@ footer a:hover {
   .in-touch-form-container {
     flex-direction: column;
     align-items: center;
+  }
+  .in-touch-form-left,
+  .in-touch-form-right {
+    width: 70%;
   }
   form label {
     font-size: 1.4rem;
@@ -1771,7 +1764,7 @@ footer a:hover {
     font-size: 3rem;
   }
   .in-touch-title-box {
-    margin-bottom: 0;
+    margin-bottom: 125px;
   }
   .entry-content {
     padding: 50px 15px;
@@ -1780,9 +1773,7 @@ footer a:hover {
     height: 250px;
     width: 250px;
   }
-  form label {
-    font-size: 1rem;
-  }
+
   .formSend-box {
     margin-top: 2rem;
   }
@@ -1853,6 +1844,11 @@ footer a:hover {
   }
   .entry-title {
     font-size: 1.5rem;
+  }
+
+  .in-touch-form-left,
+  .in-touch-form-right {
+    width: 85%;
   }
 }
 
